@@ -1,0 +1,147 @@
+/* Surf app styling */
+
+.surfapp {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.surfapp_text{
+    text-align: center;
+    margin-bottom: 50px;;
+    margin-top: 70px;
+}
+
+.surfapp_text h1 {
+    font-size: 4vw;
+    text-align: center; 
+    margin-bottom: 15px;  
+}
+
+.surfapp_text p {
+    font-size: 2.5vw;
+    width: 60%;
+    text-align: center;
+    margin: 0 auto
+}
+
+@media only screen and (min-width: 700px){
+    .surfapp_text h1 {
+        font-size: 3vw;
+    }
+
+    .surfapp_text p {
+        font-size: 2vw;
+    }
+}
+
+
+.surfcarousel {
+    width: 80%;
+    display: flex;    
+    justify-content: space-center;
+    margin: 0 auto;
+}
+
+.surfslide {
+    width: 50%;
+    /*width: 400px;*/
+    border: solid 1px black;
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+
+
+.container {
+    width: 80%;
+    display: flex;    
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 50px;  
+}
+
+.box {
+    border: solid 1px black;
+    /* margin-top: 50px; */
+    margin-bottom: 50px;
+    /*flex: auto;*/   
+    /* min-width: 300px; */
+    padding: 20px;
+}
+
+.box h1 {
+    /* margin-top: 0;
+    margin-bottom: 0; */
+    text-align: center;
+    font-size: 3vw;
+    
+}
+
+.lists {
+    
+    display: flex;
+    width: 90%;
+    justify-content: space-between;  
+}
+
+.lists ul li{
+    margin-top: 10px;
+
+}
+
+.lists .ulStates {
+    text-align: center;
+    font-style: italic;
+}
+
+.lists ul {
+    list-style-type: none;
+    font-size: 2vw;
+}
+
+.lists li {
+    white-space: nowrap;
+}
+
+.mswimage {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.mswimage img {
+    width: 100px;
+    
+}
+
+@media screen and (max-width: 500px) {
+    .surfapp_topline {
+        flex-direction: column;
+    }
+    .container {
+        flex-direction: column;
+    }
+    .lists ul {
+        font-size: 3vw;
+    }
+    .surfapp_text {
+        margin-bottom: 20px;;
+        margin-top: 30px;
+        font-size: 2.5vw;
+    }
+    .surfslide {
+        width: 90%
+    }
+
+    .carousel__button--left {
+        left: -20px;
+    }
+    
+    .carousel__button--right {
+        right: -20px;
+    }
+    .imagecarousel {
+        margin-bottom: 60px;
+    }
+}
